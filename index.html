@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Sheets Файлы</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="mb-4 text-center">Файлы Google Sheets</h2>
+  <div class="row g-4" id="file-container">
+    <!-- Примеры блоков -->
+    <div class="col-md-3 col-sm-6">
+      <a data-fancybox data-type="iframe" data-src="https://docs.google.com/spreadsheets/d/1lE2DAscBcy6T_jaJGJ68DTNt8iX-tCLY/edit?usp=sharing&ouid=112624423009524481933&rtpof=true&sd=true" href="javascript:;" class="text-decoration-none">
+        <div class="file-block">
+          <div class="file-title">Файл 1</div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <a data-fancybox data-type="iframe" data-src="https://docs.google.com/spreadsheets/d/1e2xOtZsC66dlBk93CGCEwA9tY2pOYVqh/edit?usp=sharing&ouid=112624423009524481933&rtpof=true&sd=true" href="javascript:;" class="text-decoration-none">
+        <div class="file-block">
+          <div class="file-title">Файл 2</div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <a data-fancybox data-type="iframe" data-src="https://docs.google.com/spreadsheets/d/1am92XNrOfAXjlNsexjVNx3O6Vt5VMHh3/edit?usp=sharing&ouid=112624423009524481933&rtpof=true&sd=true" href="javascript:;" class="text-decoration-none">
+        <div class="file-block">
+          <div class="file-title">Файл 3</div>
+        </div>
+      </a>
+    </div>
+    <!-- Добавьте больше блоков при необходимости -->
+  </div>
+</div>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script>
+    $(document).ready(function(){
+      // Инициализация Fancybox для всех элементов с data-fancybox
+      Fancybox.bind("[data-fancybox]", {
+        // Можно задать дополнительные опции, если необходимо
+        Toolbar: {
+            display: ["close"],
+        },
+        closeButton: "top",
+        backdrop: {
+            opacity: 0.5
+        }
+        // Другие настройки по желанию...
+      });
+    });
+  </script>
+
+</body>
+</html>
