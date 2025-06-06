@@ -20,3 +20,7 @@
   .fancybox__backdrop {
       opacity: 0.5;
   }
+
+  .has-iframe .fancybox__content, .has-map .fancybox__content, .has-pdf .fancybox__content {
+    height: 90% !important;
+  }
