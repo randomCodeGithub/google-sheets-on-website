@@ -21,6 +21,11 @@
       opacity: 0.5;
   }
 
+  .fancybox__container:not(.is-compact) .fancybox__slide.has-close-btn {
+    padding-top: 0 !important;
+  }
+
   .has-iframe .fancybox__content, .has-map .fancybox__content, .has-pdf .fancybox__content {
     height: 90% !important;
+    padding: 0;
   }
