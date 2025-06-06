@@ -29,3 +29,10 @@
     height: 90% !important;
     padding: 0;
   }
+
+  @media (max-width: 991.98px) {
+    .has-iframe .fancybox__content, .has-map .fancybox__content, .has-pdf .fancybox__content {
+        max-width: 768px !important;
+        width: 100% !important;
+    }
+  }
